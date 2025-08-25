@@ -40,9 +40,27 @@ const Header = () => {
         aria-label='Toogle Menu'
         aria-expanded={isMenuOpen}
         aria-controls='mobile-menu'>
-          
-
+          <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+            {
+              isMenuOpen ? (
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M6 18L18 6M6 6l12 12'></path>
+              ):(
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M6 18L18 6M6 6l12 12'></path>
+              )
+            }
+          </svg>
         </button>
+        {isMenuOpen && (
+          <aside id='mobile-menu'
+          className='md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg py-4 px-4'
+          aria-label='Mobile menu'>
+              <nav aria-label='Mobile navigation'>
+                  <ul className='flex flex-col space-y-4'>
+                  
+                  </ul>            
+              </nav>
+          </aside>
+        )}
     </div>
    </header>
   )
