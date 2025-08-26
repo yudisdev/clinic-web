@@ -1,4 +1,4 @@
-import React from 'react'
+import heroo from '../assets/Heroo.jpg'
 
 const Hero = () => {
     const stats = [
@@ -47,9 +47,18 @@ const Hero = () => {
                 </div>
                 <figure className='md:w-1/2 flex justify-center'>
                     <div className='relative w-full max-w-md'>
-                        <span className='bg-pink-500 rounded-full w-80 h-80 absolute -top-10 -left-10 opacity-20'>
-
+                        <span className='bg-pink-500 rounded-full w-80 h-80 absolute -top-10 -left-10 opacity-20'
+                        aria-hidden='true'>
                         </span>
+                        <span className='bg-purple-400 rounded-full w-64 h-64 absolute -bottom-10 -right-10 opacity-20'
+                        aria-hidden='true'>
+                        </span>
+                        <img src={heroo} alt="cosmetic treatment" 
+                        className='relative z-10 rounded-full shadow-2xl w-full max-w-xs md:max-w-sm object-cover'
+                        width='400'
+                        height='400'
+                        loading='eager'
+                        />
 
                     </div>
                 </figure>
