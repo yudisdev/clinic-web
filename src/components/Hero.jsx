@@ -34,7 +34,25 @@ const Hero = () => {
                             Explore Services
                         </a>
                     </nav>
+                    <aside className='py-4'>
+                        <ul className='flex flex-wrap justify-center gap-4 md:gap-8 text-center'>
+                            {stats.map((stats, index)=> (
+                                <li key={index} className='px-2'>
+                                    <strong className='text-2xl font-bold text-pink-600'>{stats.value}</strong>
+                                    <small className='block text-sm text-gray-600'>{stats.label}</small>
+                                </li>
+                            ))}
+                        </ul>
+                    </aside>
                 </div>
+                <figure className='md:w-1/2 flex justify-center'>
+                    <div className='relative w-full max-w-md'>
+                        <span className='bg-pink-500 rounded-full w-80 h-80 absolute -top-10 -left-10 opacity-20'>
+
+                        </span>
+
+                    </div>
+                </figure>
             </article>
         </section>
    </div>
