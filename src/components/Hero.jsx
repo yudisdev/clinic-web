@@ -20,7 +20,20 @@ const Hero = () => {
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nesciunt possimus ut dolor corporis sit, quod quae dolores sapiente beatae?
                         </p>
                     </hgroup>
-          
+                    <nav className='flex flex-col sm:flex-row gap-4 mb-12'>
+                        <a href="#appointment"
+                        className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
+                        text-center transition shadow-lg'
+                        aria-label='Book a consulation'>
+                            Book a Consulation
+                        </a>
+                        <a href="#services"
+                        className='border border-pink-600 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full
+                        text-center transition'
+                        aria-label='Explore our services'>
+                            Explore Services
+                        </a>
+                    </nav>
                 </div>
             </article>
         </section>
