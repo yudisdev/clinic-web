@@ -12,7 +12,7 @@ const Header = () => {
     { href: "#layanan", label: "Layanan" },
     { href: "#tentang", label: "Tentang" },
     { href: "#spesialis", label: "Spesialis" },
-    { href: "#kontak", label: "Kontak" },
+    { href: "#hubungi", label: "Hubungi Kami" },
   ];
 
   return (
@@ -22,11 +22,15 @@ const Header = () => {
           href="/"
           className="flex items-center focus:outline-none focus:ring-2 focus:ring-pink-600 rounded"
         >
-          <h1 className="text-2xl font-bold text-pink-600">
+          <h1 data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="2000" className="text-2xl font-bold text-pink-600">
             Dinda Beauty Care
           </h1>
         </a>
-        <nav aria-label="Primary navigation">
+        <nav data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="2500" aria-label="Primary navigation">
           <ul className="hidden md:flex space-x-8">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -94,7 +98,9 @@ const Header = () => {
             </nav>
           </aside>
         )}
-        <nav className="hidden md:block" aria-label="Appointment booking">
+        <nav data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="3000" className="hidden md:block" aria-label="Pesan Jadwal">
           <a
             href="#pesanjadwal"
             className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full

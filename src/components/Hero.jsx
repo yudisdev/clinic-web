@@ -12,7 +12,8 @@ const Hero = () => {
         <section id='beranda' className='relative overflow-hidden bg-gradient-to-r from-pink-100 to-purple-100'>
             <article className='container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center'>
                 <div className='md:w-1/2 mb-10 md:mb-0 '>
-                    <hgroup>
+                    <hgroup data-aos="fade-up"
+                            data-aos-duration="2000">
                         <h1 className='text-4xl md:text-5xl ld:text-6xl font-bold text-gray-800 mb-4 '>
                             Enhance Your Natural <mark className='text-pink-600 bg-transparent'>Beauty</mark> {/*tingkatkan kecantikan alami anda*/}
                         </h1>
@@ -20,7 +21,8 @@ const Hero = () => {
                             Dapatkan alis yang rapi, natural, dan tahan lama dengan teknik sulam alis profesional. Bikin penampilanmu makin percaya diri setiap hari.
                         </p>
                     </hgroup>
-                    <nav className='flex flex-col sm:flex-row gap-4 mb-12'>
+                    <nav data-aos="fade-up"
+                         data-aos-duration="2500" className='flex flex-col sm:flex-row gap-4 mb-12'>
                         <a href="#pesanjadwal"
                         className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
                         text-center transition shadow-lg'
@@ -34,7 +36,8 @@ const Hero = () => {
                             Lihat Layanan
                         </a>
                     </nav>
-                    <aside className='py-4'>
+                    <aside data-aos="fade-up"
+                         data-aos-duration="3000" className='py-4'>
                         <ul className='flex flex-wrap justify-center gap-5 md:gap-6 text-center'>
                             {stats.map((stats, index)=> (
                                 <li key={index} className='px-2'>
