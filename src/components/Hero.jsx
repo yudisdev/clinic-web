@@ -10,7 +10,7 @@ const Hero = () => {
   return (
    <div>
         <section id='beranda' className='relative overflow-hidden bg-gradient-to-r from-pink-100 to-purple-100'>
-            <article className='container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center'>
+            <article className='container mx-auto px-4 py-14 md:py-20 flex flex-col md:flex-row items-center'>
                 <div className='md:w-1/2 mb-10 md:mb-0 '>
                     <hgroup data-aos="fade-up"
                             data-aos-duration="2000">
@@ -22,7 +22,7 @@ const Hero = () => {
                         </p>
                     </hgroup>
                     <nav data-aos="fade-up"
-                         data-aos-duration="2500" className='flex flex-col sm:flex-row gap-4 mb-12'>
+                         data-aos-duration="2500" className='flex flex-col sm:flex-row gap-4 mb-8'>
                         <a href="#pesanjadwal"
                         className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
                         text-center transition shadow-lg'
@@ -49,7 +49,8 @@ const Hero = () => {
                     </aside>
                 </div>
                 <figure className='md:w-1/2 flex justify-center'>
-                    <div className='relative w-full max-w-md'>
+                    <div data-aos="fade-up"
+                         data-aos-duration="4000" className='relative w-full max-w-md'>
                         <span className='bg-pink-500 rounded-full w-80 h-80 absolute -top-10 -left-10 opacity-20'
                         aria-hidden='true'>
                         </span>

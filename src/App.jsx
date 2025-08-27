@@ -7,7 +7,8 @@ import Hero from './components/Hero'
 const App = () => {
   useEffect (()=>{
     AOS.init({
-      duration: 1000,
+      duration: 3000,
+      once: true,
     });
   },[]);
 
