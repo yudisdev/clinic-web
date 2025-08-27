@@ -8,11 +8,11 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#services", label: "Services" },
-    { href: "#about", label: "About" },
-    { href: "#speccialists", label: "Speccialists" },
-    { href: "#contact", label: "Contact" },
+    { href: "#beranda", label: "Beranda" },
+    { href: "#layanan", label: "Layanan" },
+    { href: "#tentang", label: "Tentang" },
+    { href: "#spesialis", label: "Spesialis" },
+    { href: "#kontak", label: "Kontak" },
   ];
 
   return (
@@ -96,12 +96,12 @@ const Header = () => {
         )}
         <nav className="hidden md:block" aria-label="Appointment booking">
           <a
-            href="#appoinment"
+            href="#pesanjadwal"
             className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full
           transition-colors duration-200 shadow-md focus:outline-none focus:ring-2
           focus:ring-pink-800 focus:ring-offset-2"
           >
-            Book Appoinment
+            Pesan Jadwal Sekarang
           </a>
         </nav>
       </div>
