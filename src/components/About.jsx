@@ -48,8 +48,19 @@ const About = () => {
             bg-pink-600 opacity-20 z-0'
             aria-hidden='true'>
             </span>
-
+            <aside className='absolute bottom-1 -right-5 bg-white p-3 rounded-xl shadow-lg z-20'>
+              <strong className='text-2xl font-bold text-pink-600'>3+</strong>
+              <small className='block text-xs font-medium text-gray-600'>Tahun Pengalaman</small>
+            </aside>
           </figure>
+
+          <div data-aos='fade-up' data-aos-delay='600' className='lg:w-7/12'>
+            <header>
+              <h2 className='text-3xl md:text-4xl font-bold text-gray-800 mb-6'>
+                Tentang <span className='text-pink-600'>Dinda Beauty Care</span>
+              </h2>
+            </header>
+          </div>
         </article>
       </div>
     </section>
