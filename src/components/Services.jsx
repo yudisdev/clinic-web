@@ -36,7 +36,7 @@ const Services = () => {
                 Layanan <span className='text-pink-600'>Premium Kami</span>
             </h2>
             <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, cumque.
+                Dapatkan pelayanan terbaik dengan kualitas yang terjamin untuk setiap kebutuhan Anda.
             </p>
         </header>
             <ul data-aos='fade-up' data-aos-delay='500' 
@@ -71,7 +71,7 @@ const Services = () => {
             <footer data-aos='fade-up' data-aos-delay='600' 
             className='mt-20 text-center'>
                 <h3 className='text-2xl font-bold text-gray-800 mb-6'>
-                    Ready to transform your look?
+                    Siap ubah penampilanmu jadi lebih keren?
                 </h3>
                 <a href="#pesanjadwal"
                 className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
