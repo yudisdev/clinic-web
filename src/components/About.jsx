@@ -59,7 +59,32 @@ const About = () => {
               <h2 className='text-3xl md:text-4xl font-bold text-gray-800 mb-6'>
                 Tentang <span className='text-pink-600'>Dinda Beauty Care</span>
               </h2>
+              <p className='text-lg text-gray-600 mb-6'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusamus mollitia similique magni numquam illo dignissimos alias impedit tempora molestiae!
+              </p>
             </header>
+            <section className='m-8'>
+              <h3 className='text-xl font-semibold text-gray-800 mb-4'>Hubungi Kami</h3>
+              <ul className='space-y-3'>
+                {approachTtems.map((item, index) =>(
+                  <li key={index} className='flex items-start'>
+                    <figure className='bg-pink-100 p-1 rounded-full mr-3'>
+                      {item.icon}
+                    </figure>
+                    <p className='text-gray-700'>{item.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <section className='grid grid-cols-2 gap-4 mb-8'>
+              {stats.map((item, index) => (
+                <article key={index} className='bg-white p-4 rounded-lg shadow-sm flex items-center'>
+                  <figure className='mr-3'>
+                    {item.icon}
+                  </figure>
+                </article>
+              ))}
+            </section>
           </div>
         </article>
       </div>
