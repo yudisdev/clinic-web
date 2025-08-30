@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from '../assets.AboutImage.png'
+import aboutImage from '../assets/aboutImage.png'
 import { FaAward, FaClinicMedical, FaHeart, FaUserMd } from 'react-icons/fa'
 
 const About = () => {
@@ -13,15 +13,19 @@ const About = () => {
     const approachTtems = [
       {
         icon: <FaHeart className='text-pink-600' aria-hidden='true'/>,
-        text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero illo repellendus culpa cupiditate error! Dolorem quae mollitia perferendis alias harum!' 
+        text:'WhatsApp',
+        text2:'Hubungi kami di 08123456789 untuk konsultasi gratis dan jadwalkan perawatan alismu hari ini!'
+
       },
       {
         icon: <FaUserMd className='text-pink-600' aria-hidden='true'/>,
-        text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero illo repellendus culpa cupiditate error! Dolorem quae mollitia perferendis alias harum!' 
+        text:'Instagram',
+        text2:'follow kami di @dindabeautycare untuk meliat hasil dan promo menarik'
       },
       {
         icon: <FaClinicMedical className='text-pink-600' aria-hidden='true'/>,
-        text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero illo repellendus culpa cupiditate error! Dolorem quae mollitia perferendis alias harum!' 
+        text:'Alamat Studio ' ,
+        text2:'Perumahan taman buana permai, block C no 9'
       },
     ]
 
@@ -60,7 +64,9 @@ const About = () => {
                 Tentang <span className='text-pink-600'>Dinda Beauty Care</span>
               </h2>
               <p className='text-lg text-gray-600 mb-6'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem accusamus mollitia similique magni numquam illo dignissimos alias impedit tempora molestiae!
+                  Dinda Beauty Care adalah tempat perawatan alis yang menghadirkan sentuhan natural dan elegan untuk setiap pelanggan.
+                  Kami percaya setiap orang berhak memiliki alis yang indah dan sesuai karakter wajah.
+                  Dengan teknik terkini dan suasana yang nyaman, kami selalu siap membuatmu tampil lebih percaya diri.
               </p>
             </header>
             <section className='m-8'>
@@ -71,7 +77,10 @@ const About = () => {
                     <figure className='bg-pink-100 p-1 rounded-full mr-3'>
                       {item.icon}
                     </figure>
+                    <figure>
                     <p className='text-gray-700'>{item.text}</p>
+                    <p className='text-gray-700'>{item.text2}</p>
+                    </figure>
                   </li>
                 ))}
               </ul>
@@ -82,32 +91,39 @@ const About = () => {
                   <figure className='mr-3'>
                     {item.icon}
                   </figure>
+                  <div>
+                    <strong className='text-xl'></strong>
+                  </div>
                 </article>
               ))}
             </section>
+            
 
             <nav>
               <a href="#" className='inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full
               transition shadow-md focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2'>
-                Meet our specialist
+                Apesialis alis kami
               </a>
             </nav>
           </div>
         </article>
-          <aside className='mt-20 bg-white rounded-2xl md:p-12 shadow-lg relative overflow-hidden'>
+          <aside data-aos='fade-up' data-aos-delay='700' className='mt-20 bg-white rounded-2xl md:p-12 shadow-lg relative overflow-hidden'>
             <span className='absolute -top-20 -right-20 w-64 h-64 rounded-full bg-pink-500 opacity-40'
             aria-hidden='true'></span>
             <div className='relative z-10'>
-              <h3 className='text-2xl font-bold text-gray-800 mb-6'>Our mission</h3>
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>Misi Kami</h3>
               <blockquote className='text-lg text-gray-700 mb-6'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non, tempore blanditiis earum totam a tempora recusandae molestiae perspiciatis maiores.
+                 Dinda Beauty Care hadir untuk memberikan pengalaman sulam alis yang nyaman, ramah, dan penuh perhatian.
+                 Kami percaya setiap orang berhak memiliki alis indah yang natural dan sesuai karakter wajahnya.
+                 Dengan teknik terkini dan bahan yang aman, kami selalu berusaha memberikan hasil terbaik agar setiap pelanggan merasa percaya diri dan puas setelah perawatan bersama kami.
               </blockquote>
               <figure className='flex items-center'>
                 <div className='w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center mr-4'>
                   <FaUserMd className='text-pink-600' aria-hidden='true'/>
                 </div>
                 <figcaption>
-                   <cite className='font-semibold text-gray-800 not-italic'>Dian Widiani</cite>
+                   <cite className='font-semibold text-gray-800 not-italic'>Ni Made Dian Widiani</cite>
+                   <p>Owner & Brow artist</p>
                 </figcaption>
               </figure>
             </div>
