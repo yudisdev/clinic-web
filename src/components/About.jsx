@@ -85,8 +85,33 @@ const About = () => {
                 </article>
               ))}
             </section>
+
+            <nav>
+              <a href="#" className='inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full
+              transition shadow-md focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2'>
+                Meet our specialist
+              </a>
+            </nav>
           </div>
         </article>
+          <aside className='mt-20 bg-white rounded-2xl md:p-12 shadow-lg relative overflow-hidden'>
+            <span className='absolute -top-20 -right-20 w-64 h-64 rounded-full bg-pink-500 opacity-40'
+            aria-hidden='true'></span>
+            <div className='relative z-10'>
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>Our mission</h3>
+              <blockquote className='text-lg text-gray-700 mb-6'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non, tempore blanditiis earum totam a tempora recusandae molestiae perspiciatis maiores.
+              </blockquote>
+              <figure className='flex items-center'>
+                <div className='w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center mr-4'>
+                  <FaUserMd className='text-pink-600' aria-hidden='true'/>
+                </div>
+                <figcaption>
+                   <cite className='font-semibold text-gray-800 not-italic'>Dian Widiani</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </aside>
       </div>
     </section>
 
