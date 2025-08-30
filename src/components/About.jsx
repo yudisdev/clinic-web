@@ -92,7 +92,8 @@ const About = () => {
                     {item.icon}
                   </figure>
                   <div>
-                    <strong className='text-xl'></strong>
+                    <strong className='text-xl font-bold text-gray-800'>{item.value}</strong>
+                    <p className='text-sm text-gray-600'>{item.label}</p>
                   </div>
                 </article>
               ))}
@@ -102,7 +103,7 @@ const About = () => {
             <nav>
               <a href="#" className='inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full
               transition shadow-md focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2'>
-                Apesialis alis kami
+                Spesialis alis kami
               </a>
             </nav>
           </div>
@@ -110,7 +111,7 @@ const About = () => {
           <aside data-aos='fade-up' data-aos-delay='700' className='mt-20 bg-white rounded-2xl md:p-12 shadow-lg relative overflow-hidden'>
             <span className='absolute -top-20 -right-20 w-64 h-64 rounded-full bg-pink-500 opacity-40'
             aria-hidden='true'></span>
-            <div className='relative z-10'>
+            <div className='relative z-10 py-5 px-5 md:px-0 md:py-0'>
               <h3 className='text-2xl font-bold text-gray-800 mb-6'>Misi Kami</h3>
               <blockquote className='text-lg text-gray-700 mb-6'>
                  Dinda Beauty Care hadir untuk memberikan pengalaman sulam alis yang nyaman, ramah, dan penuh perhatian.
