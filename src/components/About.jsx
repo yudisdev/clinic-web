@@ -14,7 +14,7 @@ const About = () => {
       {
         icon: <FaHeart className='text-pink-600' aria-hidden='true'/>,
         text:'WhatsApp',
-        text2:'Hubungi kami di 08123456789 untuk konsultasi gratis dan jadwalkan perawatan alismu hari ini!'
+        text2:'Hubungi kami di 081238928001 untuk konsultasi gratis dan jadwalkan perawatan alismu hari ini!'
 
       },
       {
