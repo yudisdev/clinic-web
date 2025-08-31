@@ -99,7 +99,7 @@ const Specialist = () => {
                 </figure>
 
                 <div className="p-6 relative -mt-10">
-                  <div className="bg-pink-50 rounded-lg shadow-md p-6">
+                  <div className="bg-pink-200 rounded-lg shadow-md p-6">
                     <header>
                       <h3 className="text-xl font-bold text-gray-800 mb-1">{doctor.name}</h3>
                     </header>
@@ -131,7 +131,7 @@ const Specialist = () => {
         <aside
           data-aos="fade-up"
           data-aos-delay="500"
-          className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
+          className="bg-gradient-to-r from-pink-200 to-purple-200 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
         >
           <span
             className="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-pink-200 opacity-20"
@@ -145,7 +145,7 @@ const Specialist = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Siap untuk konsultasi dengan kami?
             </h3>
-            <p>
+            <p className='text-lg text-gray-600 mb-8 max-w-2xl  mx-auto'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, corrupti.
             </p>
             <nav className="flex flex-col sm:flex-row justify-center gap-4">
