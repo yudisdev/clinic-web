@@ -63,8 +63,31 @@ const Specialist = () => {
                                 loading='lazy' />
                                 <span className='absolute insert-0 bg-gradient-to-t from-black/60
                                 to-transparent' aria-hidden='true'></span>
-                                <aside className=''></aside>
+                                <aside className='absolute top-4 right-4 bg-white/90 px-3 py-1
+                                rounded-full flex items-center shadow-sm'
+                                aria-label={`Rating: ${doctor.rating} stars`}>
+                                    {renderStars(doctor.rating)}
+                                    <span className='ml-1 text-sm font-medium'>{doctor.rating}</span>
+                                </aside>
                             </figure>
+                <div className='p-6 relative -mt-10'>
+                    <div className='bg-pink-50 rounded-lg shadow-md p-6'>
+                        <header>
+                            <h3 className='text-xl font-bold text-gray-800 mb-1'>{doctor.name}</h3>
+                        </header>
+                            <p className='text-gray-600 mb-4'>{doctor.bio}</p>
+                            <ul className='flex flex-wrap gap-2 mb-4'>
+                                {doctor.specialties.map((spec, i) => (
+                                    <li key={i}>
+                                        <span className='bg-pink-50 text-pink-600 text-xs font-medium px-3 py-1 rounded-full'>
+                                            {spec}
+
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                    </div>
+                </div>
                         </article>
                     </li>
                 ))}
