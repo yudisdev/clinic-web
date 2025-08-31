@@ -1,5 +1,6 @@
 import React from 'react'
 import SpecialistImg from '../assets/SpecialistImg.png'
+import { FaQuoteLeft } from 'react-icons/fa';
 
 const Specialist = () => {
     const specialists = [
@@ -86,12 +87,47 @@ const Specialist = () => {
                                     </li>
                                 ))}
                             </ul>
+                            <figure className='absolute -top-6 left-6 bg-pink-600 text-white p-3 rounded-full shadow-lg'
+                            aria-hidden='true'>
+                                <FaQuoteLeft className='text-lg'/>
+                            </figure>
                     </div>
                 </div>
                         </article>
                     </li>
                 ))}
             </ul>
+        <aside data-aos='fade-up' data-aos-delay='500' className='bg-gradient-to-r from-pink-100
+        to-purple-100 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden'>
+
+            <span className='absolute -top-20 -left-20 w-40 h-40 rounded-full bg-pink-200 opacity-20'
+            aria-hidden='true'></span>
+            <span className='absolute -bottom-20 -right-20 w-60 h-60 rounded-full bg-pink-200 opacity-20'
+            aria-hidden='true'></span>
+            <div className='relative z-10'>
+                <h3 className='text-2xl md:text-3xl font-bold text-gray-800 mb-6'>
+                    Siap untuk konsultasi dengan kami?
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, corrupti.
+                </p>
+                <nav className='flex flex-col sm:flex-row justify-center gap-4'>
+                    <a href='#'
+                     className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
+                     transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2'
+                     aria-label='Pesan Sekarang'>                        
+                        Pesan Jadwal
+                    </a>
+                    <a href='#'
+                     className=' border border-pink-600 hover:bg-pink-50 text-pink-600 px-8 py-3 rounded-full
+                     transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2'
+                     aria-label='Hubungi Kami'>                        
+                        Hubugi Kami
+                    </a>
+
+                </nav>
+            </div>
+        </aside>
         </div>
 
     </section>
