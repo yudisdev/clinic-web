@@ -36,13 +36,30 @@ const Contact = () => {
             title: 'Working Hours',
             content: (
                 <p className='text-gray-600'>
-                  Appointments: <a href="#" className='hover:text-pink-600'>Dindabeautycare@gmail.com</a>    
+                     Minggu - Jumat: 09.00 - 20.00 <br />
+                     Sabtu: 09.00 - 17.00 <br/>
+                     Minggu: Tutup
                 </p>
             )      
         }
+    ];
+
+    const services = [
+      {value: "botox", label: "Botox Tratment"},
+      {value: "fillers", label: "Dermal fillers"},
+      {value: "laser", label: "Laser Teraphy"},
+      {value: "facelift", label: "Mon-SUgical Facelift"},
+      {value: "other", label: "Other"},
     ]
+
   return (
-    <div>Contact</div>
+    <article id='contact' className='py-20 overflow-hidden bg-gradient-to-r from bg-pink-100 to-purple-100'>
+        <div className='container mx-auto px-4'>
+          <header data-aos="fade-up" data-aos-delay="400" className='text-center mb-16 relative'>
+
+          </header>
+        </div>
+    </article>
   )
 }
 
