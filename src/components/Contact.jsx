@@ -1,5 +1,5 @@
-import React from 'react'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
+import contactImg from '../assets/contact.jpg'
 
 const Contact = () => {
     const contactItems = [
@@ -70,12 +70,68 @@ const Contact = () => {
                     <h2 className='text-2xl font-bold text-gray-800 mb-6'>Get In Touch</h2>
                     <address className='space-y-6'>
                       {
-                        
-                      }
+                        contactItems.map((item, index) => (
+                          <article key={index} className='flex items-start'>
+                            <figure className='bg-pink-100 p-3 rounded-full mr-4 flex-shrink-0'>
+                              {item.icon}
+                            </figure>
+                            <div>
+                              <h3 className='font-medium text-gray-800 mb-1'>{item.title}</h3>
+                              {item.content}
+                            </div>
+                          </article>
+                        ))}
                     </address>
-
+                        <figure className='mt-8 rounded-xl overflow-hidden shadow-md'>
+                          <img 
+                          src={contactImg} 
+                          className='w-full h-48 object-cover hover:scale-105 transition-transform duration-500'
+                          width='200'
+                          loading='lazy' />
+                        </figure>
                   </section>
                 </aside>
+                <section data-aos='fade-up' data-aos-delay='600' className='lg:w-3/5'>
+                 <div className='bg-white rounded-2xl shadow-xl p-8 h-full'>
+                  <h2 className='text-2xl font-bold text-gray-800 mb-6'>Send Us a Message</h2>
+                  <form className='space-y-6'>
+                    <fieldset className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                        <div>
+                          <label className='block text-gray-700 font-medium mb-2'>Nama</label>
+                          <input
+                          type='text'
+                          id='name'
+                          name='name'
+                          className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2
+                          focus:ring-pink-500 focus:border-transparent' 
+                          placeholder='Your name'/>
+                        </div>
+                        <div>
+                          <label className='block text-gray-700 font-medium mb-2'>Nomor Telefon</label>
+                          <input
+                          type='tel'
+                          id='phone'
+                          name='phone'
+                          className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2
+                          focus:ring-pink-500 focus:border-transparent' 
+                          placeholder='+62-XXXX-XXXX'/>
+                        </div>
+                    </fieldset>
+                        <div>
+                          <label className='block text-gray-700 font-medium mb-2'>Alamat Email</label>
+                          <input
+                          type='email'
+                          id='email'
+                          name='email'
+                          className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2
+                          focus:ring-pink-500 focus:border-transparent' 
+                          placeholder='nama@email.com'/>
+                        </div>
+
+                  </form>
+                 </div>
+
+                </section>
               </main>
             </div>
           </header>
