@@ -127,10 +127,25 @@ const Contact = () => {
                           focus:ring-pink-500 focus:border-transparent' 
                           placeholder='nama@email.com'/>
                         </div>
+                        <div>
+                          <label className='block text-gray-700 font-medium mb-2'>Tertarik Pada Layanan Kami</label>
+                          <input
+                          id='service'
+                          name='service'
+                          className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2
+                          focus:ring-pink-500 focus:border-transparent' 
+                          placeholder='nama@email.com'/>
+                          <option value="">Pilih layanan</option>
+                          {services.map((service) => (
+                            <option key={service.value} value={services.value}>
+                              {service.label}
+                            </option>
+                          ))}
+                        </div>
 
                   </form>
-                 </div>
 
+                 </div>
                 </section>
               </main>
             </div>
