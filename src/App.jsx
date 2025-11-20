@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import About from './components/About'
 import Specialist from './components/Specialist'
+import Contact from './components/Contact'
 
 const App = () => {
   useEffect (()=>{
@@ -22,6 +23,7 @@ const App = () => {
    <Services/>
    <About/>
    <Specialist/> 
+   <Contact/>
    </>
 
   )
