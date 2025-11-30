@@ -98,7 +98,50 @@ const Footer = () => {
                             </ul>
                         </nav>
                     </section>
+                    <address>
+                        <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute
+                        after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-pink-500">
+                            Contact Us
+                        </h3>
+                        <ul className="space-y-4">
+                            {contactinfo.map((info, index)=> (
+                                <li key={index} className="flex items-start">
+                                    {info.icon}
+                                    {info.content}
+                                </li>
+                            ))}
+
+                        </ul>
+                    </address>
                 </div>
+                <section className="bg-gray-800 rounded-xl p-8 m-12" aria-labelledby="newsletter-heading">
+                    <div className="flex flex-col lg:flex-row items-center justify-between">
+                        <div className="mb-6 lg:mb-0 lg:mr-8">
+                            <h3 id='newsletter-heading' className="text-xl font-bold mb-2">
+                                Subscribe to our Newsletter
+                            </h3>
+                            <p className="text-gray-400">Gety Update on special offers and beauty tips</p>
+                        </div>
+                        <form className="fkex flex-col sm:flex-row w-full lg:w-auto" aria-label='Newsletter sub form'>
+                            <label className="sr-only">Your email address</label>
+                            <input 
+                            type="email"
+                            placeholder="Your email address"
+                            className="px-6 py-3 rounded-full bg-gray-700 text-white focus:outline-none
+                            focus:ring-2 focus:ring-pink-500 mb-3 sm:mb-0 sm:mr-0 w-full"
+                            required />
+                            <button
+                            type="submit"
+                            className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
+                            transition shadow-lg whitespace-nowrap">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </section>
+                <footer className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                    <p className="text-gray-500 text-sm mb-4 md:mb-0"></p>
+                </footer>
             </div>
         </Footer>
     )
