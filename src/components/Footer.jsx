@@ -63,8 +63,30 @@ const Footer = () => {
                             <h2 className="text-2xl font-bold">Dinda Beauty Care</h2>
                         </header>
                         <p className="text-gray-400 mb-6">
-                            
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, exercitationem repellat
+                             eaque molestiae, atque asperiores minima excepturi consectetur, et sit ullam quidem laboriosam esse. Nostrum amet officia fugit reprehenderit ipsum?
                         </p>
+                        <nav aria-label="social media links">
+                            <ul className="flex space-x-4">
+                                {sociallinks.map((link, index)=>(
+                                    <li key={index}>
+                                        <a href="#"
+                                        className="bg-gray-800 hover:bg-pink-600 h-10 w-10 rounded-full flex
+                                        items-center justify-center transition"
+                                        aria-label={item.label}>
+                                            {item.icon}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    </section>
+                    <section>
+                        <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute aftrer:left-0 
+                        after:bottom-0 after:w-12 after:h-1 after:bg-pink-500">
+                            Quick Links
+                        </h3>
+                        <nav></nav>
                     </section>
                 </div>
             </div>
