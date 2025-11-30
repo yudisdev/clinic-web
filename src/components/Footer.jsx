@@ -86,7 +86,17 @@ const Footer = () => {
                         after:bottom-0 after:w-12 after:h-1 after:bg-pink-500">
                             Quick Links
                         </h3>
-                        <nav></nav>
+                        <nav aria-label="Quick Links">
+                            <ul className="space-y-3">
+                                {quickLinks.map((link, index)=>(
+                                    <li key={index}>
+                                        <a href={link.href} className="text-gray-400 hover:text-pink-500 transition">
+                                            {link.text}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
                     </section>
                 </div>
             </div>
