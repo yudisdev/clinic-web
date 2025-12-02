@@ -140,7 +140,20 @@ const Footer = () => {
                     </div>
                 </section>
                 <footer className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-gray-500 text-sm mb-4 md:mb-0"></p>
+                    <p className="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; {new Date().getFullYear()} Dinda Beauty Care. All rights reserved.
+                    </p>
+                    <nav aria-label="legal links">
+                        <ul className="flex space-x-6">
+                            {legalLinks.map((link, index)=>(
+                                <li key={index}>
+                                    <a href={link.text} className="text-gray-500 hover:text-pink-600 text-sm transition">
+                                        {link.text}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
                 </footer>
             </div>
         </Footer>
