@@ -10,11 +10,11 @@ const Footer = () => {
     ];
 
     const quickLinks = [
-        {text: "Home", href: "#"},
-        {text: "About Us", href: "#"},
-        {text: "Our Services", href: "#"},
-        {text: "Our Specialist", href: "#"},
-        {text: "Contact Us", href: "#"},
+        {text: "Beranda", href: "#"},
+        {text: "Tentang", href: "#"},
+        {text: "Layanan", href: "#"},
+        {text: "Spesialis", href: "#"},
+        {text: "Hubungi Kami", href: "#"},
     ];
 
     const contactinfo = [
@@ -33,13 +33,13 @@ const Footer = () => {
         {
             icon: <MdEmail className="text-pink-500 text-xl mt-1 mr-4 flex-shrink-0"/>,
             content: <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                info@gmail.com
+                nama@gmail.com
             </a>
         },
         {
             icon: <MdAccessTime className="text-pink-500 text-xl mt-1 mr-4 flex-shrink-0"/>,
             content: <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                Sun-Thu: 9AM-9PM, Fri: 2PM-9PM
+                Senin - Sabtu: 09:00 - 21:00 
             </a>
         }
     ];
@@ -63,7 +63,7 @@ const Footer = () => {
                         </header>
 
                         <p className="text-gray-400 mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Layanan sulam alis dan perawatan kuku untuk tampilan yang rapi, cantik, dan tahan lama.
                         </p>
 
                         <nav aria-label="social media links">
