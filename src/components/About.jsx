@@ -1,5 +1,6 @@
 import React from 'react'
 import aboutImage from '../assets/aboutImage.png'
+import Dinda2 from '../assets/Dinda2.jpg'
 import { FaAward, FaClinicMedical, FaHeart, FaUserMd } from 'react-icons/fa'
 
 const About = () => {
@@ -36,7 +37,7 @@ const About = () => {
         <article data-aos='fade-up' data-aos-delay='400' className='flex flex-col lg:flex-row items-center gap-12'>
           <figure className='lg:w-5/12 relative'>
           <div className='relative z-10 rounded-2xl overflow-hidden shadow-2xl w-full max-w-md mx-auto'>
-            <img src={aboutImage}
+            <img src={Dinda2}
             className='w-full h-auto object-cover aspect-[4/5]'
             loading='lazy'/>
             <div className='absolute inset-0 bg-gradient-to-t from-black/40 to-transparent'

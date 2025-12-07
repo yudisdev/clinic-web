@@ -2,6 +2,8 @@ import React from 'react';
 import SpecialistsImg from '../assets/SpecialistsImg.png';
 import SpecialistsImg1 from '../assets/SpecialistsImg1.png';
 import SpecialistsImg2 from '../assets/SpecialistsImg2.png';
+import Dinda1 from '../assets/Dinda1.jpg';
+import Dinda3 from '../assets/Dinda3.jpg';
 import { FaQuoteLeft, FaStar, FaRegStar } from 'react-icons/fa';
 
 const data = [
@@ -16,7 +18,7 @@ const data = [
   {
     id: 2,
     name: 'Nail Art',
-    image: SpecialistsImg1,
+    image: Dinda1,
     bio: 'Kreasikan kuku cantikmu dengan berbagai desain nail art, mulai dari yang simple hingga elegan. Hasil rapi, warna tahan lama, dan bisa disesuaikan dengan gaya kamu.',
     rating: 5,
     specialties: ['Minimalist', 'Elegant', 'Trendy'],
@@ -24,7 +26,7 @@ const data = [
   {
     id: 3,
     name: 'Perawatan Kuku',
-    image: SpecialistsImg2,
+    image: Dinda3,
     bio: 'Perawatan kuku lengkap untuk menjaga kuku tetap sehat, bersih, dan cantik. Cocok untuk kamu yang ingin kuku terawat setiap saat.',
     rating: 5,
     specialties: ['Manicure', 'Pedicure', 'Nail Health'],
