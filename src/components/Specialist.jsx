@@ -4,13 +4,15 @@ import SpecialistsImg1 from '../assets/SpecialistsImg1.png';
 import SpecialistsImg2 from '../assets/SpecialistsImg2.png';
 import Dinda1 from '../assets/Dinda1.jpg';
 import Dinda3 from '../assets/Dinda3.jpg';
+import dpr from '../assets/dpr.jpg';
+import Dinda5 from '../assets/Dinda5.jpg';
 import { FaQuoteLeft, FaStar, FaRegStar } from 'react-icons/fa';
 
 const data = [
   {
     id: 1,
     name: 'Sulam Alis Natural',
-    image: SpecialistsImg,
+    image: Dinda5,
     bio: 'Teknik sulam alis yang menghasilkan tampilan natural, rapi, dan sesuai bentuk wajah. Menggunakan bahan aman dan metode modern agar hasilnya tahan lama tanpa rasa sakit.',
     rating: 5,
     specialties: ['Natural Look', 'Long Lasting', 'Safe'],
@@ -64,7 +66,7 @@ const Specialist = () => {
             Bertemu dengan <span className="text-pink-600">Pemilik</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto relative z-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum?
+            Hasil sulam alis natural dan nail art yang elegan tercipta dari keahlian pemilik kami. Yuk kenalan dengan sosok di balik tampilan cantikmu!
           </p>
           <span
             className="absolute -bottom-6 right-1/4 w-1/6 h-1/6 rounded-full bg-purple-100 opacity-20"
@@ -148,7 +150,7 @@ const Specialist = () => {
               Siap untuk konsultasi dengan kami?
             </h3>
             <p className='text-lg text-gray-600 mb-8 max-w-2xl  mx-auto'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, corrupti.
+              Kami siap membantu kamu memilih layanan sulam alis atau nail art yang paling cocok dengan gaya dan kebutuhanmu.
             </p>
             <nav className="flex flex-col sm:flex-row justify-center gap-4">
               <a
