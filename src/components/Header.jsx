@@ -102,7 +102,7 @@ const Header = () => {
              data-aos-easing="linear"
              data-aos-duration="3000" className="hidden md:block" aria-label="Pesan Jadwal">
           <a
-            href="#pesanjadwal"
+            href="#JadwalKonsultasi"
             className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full
           transition-colors duration-200 shadow-md focus:outline-none focus:ring-2
           focus:ring-pink-800 focus:ring-offset-2"

@@ -34,7 +34,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
               <a
-                href="#pesanjadwal"
+                href="#JadwalKonsultasi"
                 className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
                         text-center transition shadow-lg"
                 aria-label="Book a consulation"

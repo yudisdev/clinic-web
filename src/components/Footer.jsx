@@ -27,13 +27,13 @@ const Footer = () => {
         {
             icon: <MdPhone className="text-pink-500 text-xl mt-1 mr-4 flex-shrink-0"/>,
             content: <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                +62387392398
+                +6281238928001
             </a>
         },
         {
             icon: <MdEmail className="text-pink-500 text-xl mt-1 mr-4 flex-shrink-0"/>,
             content: <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                nama@gmail.com
+                dindabeautycare1@gmail.com
             </a>
         },
         {
