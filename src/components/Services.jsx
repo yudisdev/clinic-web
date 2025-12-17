@@ -73,7 +73,7 @@ const Services = () => {
                 <h3 className='text-2xl font-bold text-gray-800 mb-6'>
                     Siap ubah penampilanmu jadi lebih keren?
                 </h3>
-                <a href="#pesanjadwal"
+                <a href="#JadwalKonsultasi"
                 className='bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full
                 inline-block transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-800
                 focus:ring-offset-2'

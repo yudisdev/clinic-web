@@ -63,7 +63,7 @@ const Specialist = () => {
             aria-hidden="true"
           />
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 relative z-10">
-            Bertemu dengan <span className="text-pink-600">Pemilik</span>
+            Sentuhan Ahli <span className="text-pink-600">Sulam Alis</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto relative z-10">
             Hasil sulam alis natural dan nail art yang elegan tercipta dari keahlian pemilik kami. Yuk kenalan dengan sosok di balik tampilan cantikmu!
@@ -154,14 +154,14 @@ const Specialist = () => {
             </p>
             <nav className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="#"
+                href="#jadwalKonsultasi"
                 className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2"
                 aria-label="Pesan Sekarang"
               >
                 Pesan Jadwal
               </a>
               <a
-                href="#"
+                href="#Footer"
                 className="border border-pink-600 hover:bg-pink-50 text-pink-600 px-8 py-3 rounded-full transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                 aria-label="Hubungi Kami"
               >

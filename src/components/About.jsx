@@ -101,12 +101,7 @@ const About = () => {
             </section>
             
 
-            <nav>
-              <a href="#" className='inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full
-              transition shadow-md focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2'>
-                Spesialis alis kami
-              </a>
-            </nav>
+         
           </div>
         </article>
           <aside data-aos='fade-up' data-aos-delay='700' className='mt-20 bg-white rounded-2xl md:p-12 shadow-lg relative overflow-hidden'>
