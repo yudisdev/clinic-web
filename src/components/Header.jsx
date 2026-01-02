@@ -9,10 +9,10 @@ const Header = () => {
 
   const navLinks = [
     { href: "#beranda", label: "Beranda" },
-    { href: "#layanan", label: "Layanan" },
-    { href: "#tentang", label: "Tentang" },
-    { href: "#spesialis", label: "Spesialis" },
-    { href: "#hubungi", label: "Hubungi Kami" },
+    { href: "#services", label: "Layanan" },
+    { href: "#about", label: "Tentang" },
+    { href: "#specialists", label: "Spesialis" },
+    { href: "#contact", label: "Hubungi Kami" },
   ];
 
   return (
