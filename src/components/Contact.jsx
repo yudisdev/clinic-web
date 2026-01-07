@@ -243,7 +243,7 @@ const Contact = () => {
           className="mt-16 bg-white rounded-2xl shadow-xl overflow-hidden"
         >
           <iframe
-            src="https://maps.app.goo.gl/5iaC66KaEq8p8fT88"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3944.3636395459516!2d115.187468!3d-8.656922999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzknMjQuOSJTIDExNcKwMTEnMTQuOSJF!5e0!3m2!1sid!2sid!4v1767755966821!5m2!1sid!2sid"
             width="100%"
             height="450"
             style={{ border: 0 }}

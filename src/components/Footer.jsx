@@ -4,17 +4,17 @@ import { MdAccessTime, MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
 const Footer = () => {
     const socialLinks = [
-        {icon: <FaFacebookF className="text-lg"/>, label: "Facebook", href: "#"},
-        {icon: <FaInstagram className="text-lg"/>, label: "Instagram", href: "#"},
-        {icon: <FaWhatsapp className="text-lg"/>, label: "Whatsapp", href: "#"},
+        {icon: <FaFacebookF className="text-lg"/>, label: "Facebook", href: "https://www.facebook.com/share/1DCFgLddDw/?mibextid=wwXIfr"},
+        {icon: <FaInstagram className="text-lg"/>, label: "Instagram", href: "https://www.instagram.com/dindabeautycare__?igsh=MTRpbGdwNnRjbWdscg%3D%3D&utm_source=qr"},
+        {icon: <FaWhatsapp className="text-lg"/>, label: "Whatsapp", href: "https://wa.me/6281238928001"},
     ];
 
     const quickLinks = [
-        {text: "Beranda", href: "#"},
-        {text: "Tentang", href: "#"},
-        {text: "Layanan", href: "#"},
-        {text: "Spesialis", href: "#"},
-        {text: "Hubungi Kami", href: "#"},
+        {text: "Beranda", href: "home"}, 
+        {text: "Tentang", href: "#about"},
+        {text: "Layanan", href: "#services"},
+        {text: "Spesialis", href: "#specialists"},
+        {text: "Hubungi Kami", href: "#contact"},
     ];
 
     const contactinfo = [

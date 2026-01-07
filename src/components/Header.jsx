@@ -8,18 +8,17 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: "#beranda", label: "Beranda" },
+    { href: "home", label: "Beranda" },
     { href: "#services", label: "Layanan" },
     { href: "#about", label: "Tentang" },
     { href: "#specialists", label: "Spesialis" },
     { href: "#contact", label: "Hubungi Kami" },
-  ];
+  ]; 
 
   return (
-    <header className="bg-gradient-to-r from-pink-100 to-purple-100 sticky top-0 z-50">
+    <header id="home" className="bg-gradient-to-r from-pink-100 to-purple-100 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a
-          href="/"
           className="flex items-center focus:outline-none focus:ring-2 focus:ring-pink-600 rounded"
         >
           <h1 data-aos="fade-down"
@@ -102,7 +101,7 @@ const Header = () => {
              data-aos-easing="linear"
              data-aos-duration="3000" className="hidden md:block" aria-label="Pesan Jadwal">
           <a
-            href="#JadwalKonsultasi"
+            href="#contact"
             className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full
           transition-colors duration-200 shadow-md focus:outline-none focus:ring-2
           focus:ring-pink-800 focus:ring-offset-2"
