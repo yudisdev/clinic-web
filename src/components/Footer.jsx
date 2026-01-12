@@ -1,6 +1,7 @@
 import React from "react";
 import { FaClinicMedical, FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import { MdAccessTime, MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Footer = () => {
     const socialLinks = [
@@ -16,6 +17,16 @@ const Footer = () => {
         {text: "Spesialis", href: "#specialists"},
         {text: "Hubungi Kami", href: "#contact"},
     ];
+
+    const footeer = () => {
+      const [state, handleSubmit] = useForm("mnjjqqkr");
+      const formRef = useRef();
+      useEffect(() => {
+        if (state.succeeded && formRef.current) {
+          formRef.current.reset();
+        }
+      }, [state.succeeded]);
+    }
 
     const contactinfo = [
         {
@@ -118,7 +129,7 @@ const Footer = () => {
                 </div>
 
                 {/* Newsletter */}
-                <section className="bg-gray-800 rounded-xl p-8 mb-12" aria-labelledby="newsletter-heading">
+                <section id="footeer" className="bg-gray-800 rounded-xl p-8 mb-12" aria-labelledby="newsletter-heading">
                     <div className="flex flex-col lg:flex-row items-center justify-between">
                         
                         <div className="mb-6 lg:mb-0 lg:mr-8">

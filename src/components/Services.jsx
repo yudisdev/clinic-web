@@ -53,17 +53,7 @@ const Services = () => {
                                 {service.title}
                             </h3>
                             <p className='text-gray-600 m-6 flex-grow'>{service.desc}</p>
-                            <a href={service.link}
-                            className='text-pink-600 font-medium hover:text-pink-700 transition
-                            flex items-center m-auto'
-                            aria-label={`learn more about ${service.title}`}>
-                                Lihat Selengkapnya
-                                <svg className='w-4 h-4 ml-2' fill='none' stroke='currentColor' viewBox='0 0 24 24'
-                                aria-hidden='true'>
-                                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2}
-                                     d='M9 5l7 7-7 7'></path>
-                                </svg>
-                            </a>
+                           
                         </article>
                     </li>
                 ))}

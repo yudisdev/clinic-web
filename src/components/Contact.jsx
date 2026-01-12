@@ -4,12 +4,14 @@ import {
   FaEnvelope,
   FaClock,
 } from "react-icons/fa";
-import contactImg from "../assets/contactimg.png";
+
+import Dinda7 from "../assets/Dinda7.jpg";
 import React, { useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
+
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xblnayrv");
+  const [state, handleSubmit] = useForm("mnjjqqkr");
   const formRef = useRef();
   useEffect(() => {
     if (state.succeeded && formRef.current) {
@@ -124,7 +126,7 @@ const Contact = () => {
               </address>
               <figure className="mt-8 rounded-xl overflow-hidden shadow-md">
                 <img
-                  src={contactImg}
+                  src={Dinda7}
                   className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                   width="200"
                   loading="lazy"
